@@ -10,12 +10,11 @@ describe('[Moдуль 2 review pipe]', () => {
     expect(reviewPipe.transform(0)).toEqual('Нет отзывов');
   });
   it('Eсли значение к которому применяется pipe число которое заканичвается на 1  pipe должен возвращать "${count} отзыв"', () => {
-    expect(reviewPipe.transform(1)).toEqual('1 отзыв');
-    expect(reviewPipe.transform(21)).toEqual('21 отзыв');
-    expect(reviewPipe.transform(31)).toEqual('31 отзыв');
-    expect(reviewPipe.transform(91)).toEqual('91 отзыв');
-  });
-
+      expect(reviewPipe.transform(1)).toEqual('1 отзыв');
+      expect(reviewPipe.transform(21)).toEqual('21 отзыв');
+      expect(reviewPipe.transform(31)).toEqual('31 отзыв');
+      expect(reviewPipe.transform(91)).toEqual('91 отзыв');
+    });
   it('Eсли значение к которому применяется pipe число которое заканичвается на 11-14  pipe должен возвращать "${count} отзывов"', () => {
     expect(reviewPipe.transform(11)).toEqual('11 отзывов');
     expect(reviewPipe.transform(12)).toEqual('12 отзывов');

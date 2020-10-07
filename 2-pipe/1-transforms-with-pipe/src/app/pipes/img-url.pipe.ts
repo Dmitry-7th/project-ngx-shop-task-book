@@ -18,7 +18,7 @@ export class ImgUrlPipe implements PipeTransform {
     // });
     const [cr] = images;
     // console.log(cr);
-    console.log(b + c);
+  //  console.log(b + c);
     return cr.url;
 
   }

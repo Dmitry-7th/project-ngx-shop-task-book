@@ -9,16 +9,9 @@ export class ImgUrlPipe implements PipeTransform {
  // public ci: any;
 
   public transform(images: IProductImage[] | undefined): string {
-    const list: string[] = ['10', '20', '30'];
-    // const [cr1] = list;
-   var [a, b, c] = list;
 
-    // ci.forEach( (value) => {
-    //   console.log(value);
-    // });
     const [cr] = images;
-    // console.log(cr);
-  //  console.log(b + c);
+
     return cr.url;
 
   }

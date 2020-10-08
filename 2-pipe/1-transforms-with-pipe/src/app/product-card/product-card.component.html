@@ -3,7 +3,7 @@
     <img
       loading="auto"
       class="card-img-top"
-      [src]="product.images | imgUrl "
+      [src]="product.images | imgUrl : product"
       [alt]="product.name"
     />
   </div>
